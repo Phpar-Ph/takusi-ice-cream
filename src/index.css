@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter:opsz@14..32&family=Neuton:wght@400;700&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+/* *,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+} */
+
+@theme{
+  --font-comic: "Comic Neue", "serif";
+  --font-pacifico:"Pacifico", "serif" ;
+  --font-neuton: "Neuton", "serif";
+  --font-inter: "Inter", "serif";
+
+
+  --color-yellow : #F9DB79;
+  --color-pink : #E31C79;
+  --color-brown : #32312F;
+  --color-white: #FFFFFF;
+  --color-blue: #D6F2FD;
+  --color-gray: oklch(0.872 0.01 258.338);
+      
+}

@@ -1,2 +1,8 @@
-# takusi-ice-cream
- Takusi is a beautifully crafted ice cream website that showcases a delightful selection of flavors, smooth online ordering, and a fun, user-friendly experience. Built with modern web technologies, Takusi delivers a visually appealing and seamless browsing experience for ice cream lovers.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
