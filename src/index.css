@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter:opsz@14..32&family=Neuton:wght@400;700&family=Pacifico&display=swap');
 @import "tailwindcss";
 
-
-/* *,body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-} */
-
 @theme{
   --font-comic: "Comic Neue", "serif";
   --font-pacifico:"Pacifico", "serif" ;
