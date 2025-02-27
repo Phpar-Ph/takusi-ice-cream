@@ -1,18 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter:opsz@14..32&family=Neuton:wght@400;700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter:opsz@14..32&family=Neuton:wght@400;700&family=Pacifico&display=swap");
 @import "tailwindcss";
 
-@theme{
+@theme {
   --font-comic: "Comic Neue", "serif";
-  --font-pacifico:"Pacifico", "serif" ;
+  --font-pacifico: "Pacifico", "serif";
   --font-neuton: "Neuton", "serif";
   --font-inter: "Inter", "serif";
 
-
-  --color-yellow : #F9DB79;
-  --color-pink : #E31C79;
-  --color-brown : #32312F;
-  --color-white: #FFFFFF;
-  --color-blue: #D6F2FD;
+  --color-yellow: #f9db79;
+  --color-pink: #e31c79;
+  --color-brown: #32312f;
+  --color-white: #ffffff;
+  --color-blue: #d6f2fd;
   --color-gray: oklch(0.872 0.01 258.338);
-      
+}
+
+.slick-arrow.slick-next:before {
+  content: "";
+}
+
+.slick-arrow.slick-prev:before {
+  content: "";
 }
