@@ -22,3 +22,27 @@
 .slick-arrow.slick-prev:before {
   content: "";
 }
+
+@layer components {
+  .container {
+    @apply sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] 3xl:max-w-[1792px] 4xl:max-w-[2048px] xs:max-w-[512px] xxs:max-w-[384px]  ml-auto mr-auto mt-0 mb-0 pl-2 pr-2;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .card-h {
+    @apply h-96;
+  }
+}
+@theme {
+  --breakpoint-2xl: 96rem;
+  --breakpoint-3xl: 112rem;
+  --breakpoint-4xl: 128rem;
+  --breakpoint-xs: 32rem;
+  --breakpoint-xxs: 24rem;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #e31c79 !important;
+}
