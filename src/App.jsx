@@ -5,6 +5,7 @@ import Flavor from "./pages/Flavor";
 import Price from "./pages/Price";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
       <Navbar />
       <Home />
       <Flavor />
-      <Price />
+      {/* <Price /> */}
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,49 +1,29 @@
 import React from "react";
-import Image from "../assets/Icre-cream-hero.png";
-import Strawberry1 from "../assets/strawberry1.png";
-import Strawberry2 from "../assets/Strawberry2.png";
+import Hero from "../assets/ice-cream-hero.jpg";
 
 function Home() {
   return (
-    <div className=" h-full w-full bg-yellow">
-      <section className="container ">
-        <div className="h-fit ">
-          {/* HERO IMAGE ICE CREAM*/}
-          <div className="flex-center flex-col pt-10 relative top-10 mt-10 mb-2">
-            <img src={Image} alt="Ice cream" className=" w-[40rem] h-auto " />
-          </div>
-          <div className="flex-center flex-col relative bottom-5">
-            <div className="h-20 bg-pink w-screen justify-center items-center flex">
-              <div>
-                {/* HEADING */}
-                <h1 className="text-2xl leading-normal text-center  font-pacifico text-white">
-                  Fresh, Healthy, Naturally Delicious.
-                </h1>
-              </div>
-            </div>
-            <div className="flex b">
-              <div className="m-2">
-                {/* STRAWBERRY IMAGE */}
-                <img
-                  src={Strawberry1}
-                  alt="Strawberry"
-                  className="w-10 h-auto"
-                />
-              </div>
-              <p className="text-xs font-light w-[16rem] text-center font-neuton text-brown pt-2 pb-2">
-                Discover the joy of ice cream crafted with natural flavors,
-                delivering a fresh, healthy, and irresistibly delicious treat in
-                every scoop.
-              </p>
-              <div className="m-2">
-                <img
-                  src={Strawberry2}
-                  alt="Strawberry"
-                  className="w-8 h-auto"
-                />
-              </div>
-            </div>
-          </div>
+    <div className=" h-auto w-full">
+      <section
+        className="flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${Hero})`,
+          height: "100vh",
+          width: "100%",
+        }}
+      >
+        {/* overlay */}
+        <div className="bg-black/30 absolute top-0 left-0 right-0 bottom-0"></div>
+        <div> </div>
+        <div className="flex justify-center items-center absolute flex-col cotainer">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-normal text-center  font-pacifico text-white">
+            Savor the Joy, One Scoop at a Time.
+          </h1>
+          {/* <p className="text-xs  font-light  text-center font-neuton text-gray">
+            Discover the joy of ice cream crafted with natural flavors,
+            delivering a fresh, healthy, and irresistibly delicious treat in
+            every scoop.
+          </p> */}
         </div>
       </section>
     </div>

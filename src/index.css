@@ -25,24 +25,23 @@
 
 @layer components {
   .container {
-    @apply sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] 3xl:max-w-[1792px] 4xl:max-w-[2048px] xs:max-w-[512px] xxs:max-w-[384px]  ml-auto mr-auto mt-0 mb-0 pl-2 pr-2;
+    @apply sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xs:max-w-[512px] xl:max-w-[1280px] ml-auto mr-auto mt-0 mb-0 pl-2 pr-2 pb-0 pt-0;
   }
   .flex-center {
     @apply flex items-center justify-center;
   }
   .card-h {
-    @apply h-96;
+    @apply h-[18rem] w-[15rem] md:h-[28rem] md:w-[24rem] lg:h-[34rem] lg:w-[30rem] mr-1 ml-1;
   }
 }
 @theme {
-  --breakpoint-2xl: 96rem;
-  --breakpoint-3xl: 112rem;
-  --breakpoint-4xl: 128rem;
   --breakpoint-xs: 32rem;
-  --breakpoint-xxs: 24rem;
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: #e31c79 !important;
+}
+.slick-slide div {
+  /* margin: 10px; */
 }

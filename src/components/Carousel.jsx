@@ -54,32 +54,34 @@ function SamplePrevArrow(props) {
 function Carousel() {
   const settings = {
     dots: true,
+    // className: "center",
+    // centerMode: true,
+    // centerPadding: "60px",
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 512,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -90,78 +92,79 @@ function Carousel() {
 
   return (
     <div className="">
-      <Slider {...settings} className=" m-4 pl-4 pr-4">
-        <div className="mb-5">
-          <div className="bg-white card-h rounded-3xl flex flex-col ">
-            <div
-              style={{ backgroundImage: `url(${Mango})` }}
-              className="w-full h-[60%] bg-cover bg-center rounded-t-3xl"
-            ></div>
-            <div className="w-full  bg-pink text-center   text-white h-15 flex-center">
-              <h1 className="text-4xl font-neuton">MANGO</h1>
-            </div>
-            <div className="flex-center">
-              <h1 className=" text-center p-4 text-l font-light font-inter">
-                Sweet, tropical, and juicy, made from ripe Philippine mangoes.
-              </h1>
+      <Slider {...settings} className="p-4 m-4 pt-20">
+        {/* SLIDE 1 */}
+        <div className="pl-2 pr-2">
+          <div className=" w-full h-full flex-center ">
+            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
+              <div
+                style={{ backgroundImage: `url(${Mango})` }}
+                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
+              ></div>
+
+              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
+                <h1 className="text-md lg:text-2xl font-inter font-medium">
+                  MANGO
+                </h1>
+                <h1 className=" text-xs lg:text-lg leading-tight font-thin font-comic">
+                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                </h1>
+              </div>
             </div>
           </div>
         </div>
 
         {/* SLIDE 2 */}
         <div className="pl-2 pr-2">
-          <div className="bg-white card-h rounded-3xl relative">
-            <div
-              style={{ backgroundImage: `url(${Pandan})` }}
-              className="w-full h-[60%] bg-cover bg-center rounded-t-3xl"
-            >
-              {" "}
-            </div>
-            <div>
-              <h1 className=" text-center p-4 text-2xl font-inter">
-                Sweet, tropical, and juicy, made from ripe Philippine mangoes.
-              </h1>
-            </div>
-            <div className="w-full bg-amber-50 text-center absolute bottom-0 h-[4em] rounded-b-3xl">
-              <h1 className="p-4 text-2xl font-neuton">UBE</h1>
+          <div className=" w-full h-full flex-center ">
+            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
+              <div
+                style={{ backgroundImage: `url(${Mango})` }}
+                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
+              ></div>
+
+              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
+                <h1 className="text-md font-inter font-medium">MANGO</h1>
+                <h1 className=" text-xs leading-tight font-thin font-comic">
+                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-
+        {/* SLIDE 3 */}
         <div className="pl-2 pr-2">
-          <div className="bg-white card-h rounded-3xl relative">
-            <div
-              style={{ backgroundImage: `url(${Coconut})` }}
-              className="w-full h-[60%] bg-cover bg-center rounded-t-3xl"
-            >
-              {" "}
-            </div>
-            <div>
-              <h1 className=" text-center p-4 text-2xl font-inter">
-                Sweet, tropical, and juicy, made from ripe Philippine mangoes.
-              </h1>
-            </div>
-            <div className="w-full bg-amber-50 text-center absolute bottom-0 h-[4em] rounded-b-3xl">
-              <h1 className="p-4 text-2xl font-neuton">UBE</h1>
+          <div className=" w-full h-full flex-center ">
+            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
+              <div
+                style={{ backgroundImage: `url(${Mango})` }}
+                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
+              ></div>
+
+              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
+                <h1 className="text-md font-inter font-medium">MANGO</h1>
+                <h1 className=" text-xs leading-tight font-thin font-comic">
+                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-
+        {/* SLIDE 4 */}
         <div className="pl-2 pr-2">
-          <div className="bg-white card-h rounded-3xl relative">
-            <div
-              style={{ backgroundImage: `url(${Strawberry})` }}
-              className="w-full h-[60%] bg-cover bg-center rounded-t-3xl"
-            >
-              {" "}
-            </div>
-            <div>
-              <h1 className=" text-center p-4 text-2xl font-inter">
-                Sweet, tropical, and juicy, made from ripe Philippine mangoes.
-              </h1>
-            </div>
-            <div className="w-full bg-amber-50 text-center absolute bottom-0 h-[4em] rounded-b-3xl">
-              <h1 className="p-4 text-2xl font-neuton">UBE</h1>
+          <div className=" w-full h-full flex-center ">
+            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
+              <div
+                style={{ backgroundImage: `url(${Mango})` }}
+                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
+              ></div>
+
+              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
+                <h1 className="text-md font-inter font-medium">MANGO</h1>
+                <h1 className=" text-xs leading-tight font-thin font-comic">
+                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                </h1>
+              </div>
             </div>
           </div>
         </div>

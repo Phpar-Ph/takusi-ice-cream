@@ -1,30 +1,28 @@
 import React from "react";
 import Hand from "../assets/flavor/Ice_cream_flavor.png";
-import FlavorGallery from "../components/FlavorGallery";
+
+import Carousel from "../components/Carousel";
 
 function Flavor() {
   return (
     <div>
-      <section className="h-fit w-full bg-blue">
+      <section className="h-fit w-full pb-20">
         {/* FLAVOR HEADING */}
-        <div className="h-30  bg-brown">
-          <div className="container">
-            <div className="flex justify-around items-center flex-row-reverse">
-              <div className=" h-full font-neuton text-white  flex flex-col justify-center text-right ">
-                {/* HEADING */}
-                <h1 className=" text-4xl">Our</h1>
-                <h1 className=" text-5xl ">FLAVORS</h1>
-              </div>
-              {/* IMAGE */}
-              <div className=" mt-10">
-                <img src={Hand} alt="Takusi Ice Cream Logo" className="h-20" />
-              </div>
+        <div className="h-20 lg:h-30 bg-brown  flex items-end">
+          <div className="container flex items-center justify-around max-w-[768px]">
+            {/* IMAGE */}
+            <div className=" ">
+              <img src={Hand} alt="Takusi Ice Cream Logo" className="h-18" />
+            </div>
+            {/* HEADING OUR FLAVORS*/}
+            <div className="font-neuton text-white text-right ">
+              <h1 className=" text-3xl lg:text-7xl md:text-4xl">OUR FLAVORS</h1>
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="container max-w-[1280px]">
           {/* IAMGE GRID GALLERRY */}
-          <FlavorGallery />
+          <Carousel />
         </div>
       </section>
     </div>
