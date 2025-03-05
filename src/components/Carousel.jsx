@@ -125,7 +125,9 @@ function Carousel() {
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">CHOCO</h1>
+                <h1 className="text-md lg:text-2xl font-inter font-medium">
+                  CHOCO
+                </h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
                   obcaecati voluptates
@@ -144,7 +146,9 @@ function Carousel() {
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">UBE</h1>
+                <h1 className="text-md lg:text-2xl font-inter font-medium">
+                  UBE
+                </h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Autem dolore dicta consequuntur deleniti quisquam natus
@@ -163,7 +167,9 @@ function Carousel() {
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">BUKO</h1>
+                <h1 className="text-md lg:text-2xl font-inter font-medium">
+                  BUKO
+                </h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid, alias vitae. Sit iusto eum totam culpa tempore
@@ -182,7 +188,9 @@ function Carousel() {
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">STRAWBERRY</h1>
+                <h1 className="text-md lg:text-2xl font-inter font-medium">
+                  STRAWBERRY
+                </h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid, alias vitae. Sit iusto eum totam culpa tempore
@@ -201,7 +209,9 @@ function Carousel() {
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">PANDAN</h1>
+                <h1 className="text-md lg:text-2xl font-inter font-medium">
+                  PANDAN
+                </h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Aliquid, alias vitae. Sit iusto eum totam culpa tempore
