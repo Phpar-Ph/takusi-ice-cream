@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel";
 function Flavor() {
   return (
     <div>
-      <section className="h-fit w-full pb-20">
+      <section className="h-fit w-full pb-20" id="flavor">
         {/* FLAVOR HEADING */}
         <div className="h-20 lg:h-30 bg-brown  flex items-end">
           <div className="container flex items-center justify-around max-w-[768px]">

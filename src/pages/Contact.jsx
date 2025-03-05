@@ -23,7 +23,7 @@ function Contact() {
   };
 
   return (
-    <div className="w-full h-full bg-white ">
+    <div className="w-full h-full bg-white " id="contact">
       <div className="h-full container lg:max-w-[1024px] md:max-w-[768px] pb-20 pt-20">
         <div
           className=" mt-10 flex flex-col-reverse m-4 sm:flex-row sm:gap-2

@@ -3,7 +3,7 @@ import Hero from "../assets/ice-cream-hero.jpg";
 
 function Home() {
   return (
-    <div className=" h-auto w-full">
+    <div className=" h-auto w-full " id="home">
       <section
         className="flex items-center justify-center bg-cover bg-center"
         style={{

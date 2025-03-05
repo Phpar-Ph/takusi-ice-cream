@@ -7,7 +7,7 @@ import CarouselAbout from "../components/CarouselAbout";
 
 function About() {
   return (
-    <div className="h-full w-full bg-blue relative">
+    <div className="h-full w-full bg-blue relative" id="about">
       <div className="w-full h-20 bg-brown">
         <div className="flex justify-center items-center h-full container">
           <h1 className="text-4xl text-white">About Us</h1>
@@ -16,7 +16,7 @@ function About() {
       <div className="container  flex justify-center">
         <div className=" max-w-[1024px]  md:relative">
           <div className=" rounded-2xl p-6 border-2 md:border-none md:pt-6  mt-4 mb-4 relative md:static pb-10 md:flex md:flex-row-reverse ">
-            <div className="h-64 xs:h-72 sm:h-80 w-full md:w-[60%] p-2 md:mt-4">
+            <div className="h-64 lg:h-96 xs:h-72 sm:h-80 w-full md:w-[60%] p-2 md:mt-4">
               <CarouselAbout />
             </div>
             <div className="md:w-[40%] z-1 md:mt-4 md:ml-0 md:mb-4 md:mr-0 md:border-2 rounded-2xl md:p-6">
@@ -42,14 +42,14 @@ function About() {
               />
             </div>
           </div>
-          <div className=" hidden ">
+          {/* <div className="h-full">
             <CarouselAbout />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="absolute top-0">
+      {/* <div className="absolute top-0">
         <img src={falling} alt="falling" className="w-full h-20" />
-      </div>
+      </div> */}
     </div>
   );
 }
