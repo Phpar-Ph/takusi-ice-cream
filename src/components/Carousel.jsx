@@ -107,7 +107,8 @@ function Carousel() {
                   MANGO
                 </h1>
                 <h1 className=" text-xs lg:text-lg leading-tight font-thin font-comic">
-                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur at totam exercitationem, mollitia dolorum quas
                 </h1>
               </div>
             </div>
@@ -119,14 +120,15 @@ function Carousel() {
           <div className=" w-full h-full flex-center ">
             <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
               <div
-                style={{ backgroundImage: `url(${Mango})` }}
+                style={{ backgroundImage: `url(${Choco})` }}
                 className="w-full h-[80%] bg-cover bg-center rounded-t-md"
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">MANGO</h1>
+                <h1 className="text-md font-inter font-medium">CHOCO</h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
-                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+                  obcaecati voluptates
                 </h1>
               </div>
             </div>
@@ -137,14 +139,15 @@ function Carousel() {
           <div className=" w-full h-full flex-center ">
             <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
               <div
-                style={{ backgroundImage: `url(${Mango})` }}
+                style={{ backgroundImage: `url(${Ube})` }}
                 className="w-full h-[80%] bg-cover bg-center rounded-t-md"
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">MANGO</h1>
+                <h1 className="text-md font-inter font-medium">UBE</h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
-                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Autem dolore dicta consequuntur deleniti quisquam natus
                 </h1>
               </div>
             </div>
@@ -155,14 +158,53 @@ function Carousel() {
           <div className=" w-full h-full flex-center ">
             <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
               <div
-                style={{ backgroundImage: `url(${Mango})` }}
+                style={{ backgroundImage: `url(${Coconut})` }}
                 className="w-full h-[80%] bg-cover bg-center rounded-t-md"
               ></div>
 
               <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="text-md font-inter font-medium">MANGO</h1>
+                <h1 className="text-md font-inter font-medium">BUKO</h1>
                 <h1 className=" text-xs leading-tight font-thin font-comic">
-                  Sweet, tropical, and juicy, made from ripe Philippine mangoes.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, alias vitae. Sit iusto eum totam culpa tempore
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* slide 5 */}
+        <div className="pl-2 pr-2">
+          <div className=" w-full h-full flex-center ">
+            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
+              <div
+                style={{ backgroundImage: `url(${Strawberry})` }}
+                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
+              ></div>
+
+              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
+                <h1 className="text-md font-inter font-medium">STRAWBERRY</h1>
+                <h1 className=" text-xs leading-tight font-thin font-comic">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, alias vitae. Sit iusto eum totam culpa tempore
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* SLIDE 6 */}
+        <div className="pl-2 pr-2">
+          <div className=" w-full h-full flex-center ">
+            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
+              <div
+                style={{ backgroundImage: `url(${Pandan})` }}
+                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
+              ></div>
+
+              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
+                <h1 className="text-md font-inter font-medium">PANDAN</h1>
+                <h1 className=" text-xs leading-tight font-thin font-comic">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, alias vitae. Sit iusto eum totam culpa tempore
                 </h1>
               </div>
             </div>
