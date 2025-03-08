@@ -12,58 +12,79 @@ function Navbar() {
   };
   return (
     // Nabar
-    <div className="w-full bg-white top-0 fixed z-10 ">
+    <div className="w-full max-h-lvh  top-0 fixed z-10 ">
       <section className="container ">
-        <div className=" h-20  flex items-center justify-between font-comic text-brown ">
-          {/* LOGO */}
-          <div className="cursor-pointer">
-            <Link to="home" smooth={true} duration={300}>
-              <img
-                src={Logo}
-                alt="Takusi Ice Cream Logo"
-                className="w-[6rem] h-auto"
-              />
-            </Link>
-          </div>
+        <div className=" h-20  flex pt-10 items-center  justify-center font-comic ">
           {/* NAV MENU  */}
-          <div className=" hidden lg:block">
-            <ul className="flex space-x-8 text-2xl ">
-              <li className="cursor-pointer">
-                <Link to="home" smooth={true} duration={300}>
+          <div className=" hidden lg:block ">
+            <ul className="navbar ">
+              <li className="cursor-pointer ">
+                <Link
+                  to="home"
+                  smooth={true}
+                  spy={true}
+                  offset={-50}
+                  duration={300}
+                >
                   Home
                 </Link>
               </li>
               <li className="cursor-pointer">
-                <Link to="flavor" smooth={true} duration={300}>
+                <Link
+                  to="flavor"
+                  smooth={true}
+                  spy={true}
+                  offset={50}
+                  duration={300}
+                >
                   Flavor
                 </Link>
               </li>
               <li>
-                {/* <Link to="price" smooth={true} duration={300}>
-                  Price
-                </Link> */}
+                {/* LOGO */}
+                <div className="cursor-pointer">
+                  <Link to="home" smooth={true} duration={300}>
+                    <img
+                      src={Logo}
+                      alt="Takusi Ice Cream Logo"
+                      className="w-[6rem] h-auto"
+                    />
+                  </Link>
+                </div>
               </li>
               <li className="cursor-pointer">
-                <Link to="about" smooth={true} duration={300}>
+                <Link
+                  to="about"
+                  smooth={true}
+                  spy={true}
+                  offset={50}
+                  duration={300}
+                >
                   About
                 </Link>
               </li>
               <li className="cursor-pointer">
-                <Link to="contact" smooth={true} duration={300}>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  spy={true}
+                  offset={50}
+                  duration={300}
+                >
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
           {/* ORDER NOW BUTTON */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <button
               type="button"
               className="text-white bg-brown hover:bg-blue-800 px-4 py-2 rounded-xl text-4"
             >
               Order Now
             </button>
-          </div>
+          </div> */}
           <div
             className="lg:hidden text-2xl cursor-pointer "
             onClick={toggleMenu}

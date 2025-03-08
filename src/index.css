@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter:opsz@14..32&family=Neuton:wght@400;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Coiny&family=Comic+Neue&family=Inter:opsz@14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:wght@400;700&family=Pacifico&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -6,6 +6,9 @@
   --font-pacifico: "Pacifico", "serif";
   --font-neuton: "Neuton", "serif";
   --font-inter: "Inter", "serif";
+  --font-coiny: "Coiny", "system-ui";
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-archivo: "Archivo Black", "sans-serif";
 
   --color-yellow: #f9db79;
   --color-pink: #e31c79;
@@ -24,14 +27,47 @@
 }
 
 @layer components {
+  /* SECTION CONTAINER */
   .container {
     @apply sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xs:max-w-[512px] xl:max-w-[1280px] ml-auto mr-auto mt-0 mb-0 pl-2 pr-2 pb-0 pt-0;
   }
+  /* FLEX CENTER */
   .flex-center {
     @apply flex items-center justify-center;
   }
+  /* CAROUSEL CARD HEIGHT AND WIDTH*/
   .card-h {
     @apply h-[18rem] w-[15rem] md:h-[28rem] md:w-[24rem] lg:h-[34rem] lg:w-[30rem] mr-1 ml-1;
+  }
+  /* Flavor carousel heading */
+  .headingFlavor {
+    @apply text-sm lg:text-2xl font-montserrat font-semibold;
+  }
+  /* Flavor subheading */
+  .subheadingFlavor {
+    @apply text-xs lg:text-lg leading-tight font-thin font-comic;
+  }
+  /* CONTACT FORM STYLR*/
+  .contact-container {
+    @apply mb-1 lg:mb-2 xl:mb-4;
+  }
+  .contactLabel-font {
+    @apply text-gray-700 text-xs lg:text-lg font-medium mb-1 block;
+  }
+  .contactInput {
+    @apply w-full  text-sm pt-1 pb-1 pl-2 pr-2 lg:text-lg lg:pt-2 lg:pb-2 lg:pl-4 xl:pr-4 border-1 rounded-sm focus:outline-none focus:ring-1 focus:ring-blue-500;
+  }
+  /* form button */
+  .btn {
+    @apply bg-blue-500 text-white text-sm lg:text-lg px-8 py-1 rounded-sm hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500 w-48;
+  }
+  /*   nabvar ul */
+  .navbar {
+    @apply flex justify-center items-center space-x-20 text-2xl text-white font-medium;
+  }
+  /* glow dropshadow hero heading */
+  .glow {
+    @apply drop-shadow-[0px_0px_28px_rgba(255,255,255,0.8)];
   }
 }
 @theme {

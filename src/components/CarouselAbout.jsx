@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.jpg";
+import image1 from "../assets/about_slide/image1.jpg";
+import image2 from "../assets/about_slide/image2.jpg";
+import image3 from "../assets/about_slide/image3.jpg";
+import image4 from "../assets/about_slide/image4.jpg";
+import image5 from "../assets/about_slide/image5.jpg";
 // Add more image imports here
 
-const images = [image1, image2];
+const images = [image1, image2, image3, image4, image5];
 
 function CarouselAbout() {
   const [currentIndex, setCurrentIndex] = useState(0);

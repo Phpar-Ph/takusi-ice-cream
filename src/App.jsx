@@ -13,8 +13,9 @@ function App() {
       <Navbar />
       <Home />
       <Flavor />
-      {/* <Price /> */}
       <About />
+      {/*    <Price />  */}
+
       <Contact />
       <Footer />
     </div>
