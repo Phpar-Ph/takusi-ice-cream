@@ -15,7 +15,7 @@
   --color-brown: #32312f;
   --color-white: #ffffff;
   --color-blue: #d6f2fd;
-  --color-gray: oklch(0.872 0.01 258.338);
+  --color-bluePrimary: #0b3661;
 }
 
 .slick-arrow.slick-next:before {
@@ -37,7 +37,7 @@
   }
   /* CAROUSEL CARD HEIGHT AND WIDTH*/
   .card-h {
-    @apply h-[18rem] w-[15rem] md:h-[28rem] md:w-[24rem] lg:h-[34rem] lg:w-[30rem] mr-1 ml-1;
+    @apply h-[18rem] w-[15rem] md:h-[28rem] md:w-[24rem] lg:h-[34rem] lg:w-[30rem];
   }
   /* Flavor carousel heading */
   .headingFlavor {
@@ -61,9 +61,21 @@
   .btn {
     @apply bg-blue-500 text-white text-sm lg:text-lg px-8 py-1 rounded-sm hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500 w-48;
   }
-  /*   nabvar ul */
+  /* NAVBAR */
   .navbar {
+    @apply w-full  h-auto  top-0 fixed z-10 bg-transparent transition-all duration-300 delay-150 ease-out;
+  }
+  /* NAVBAR ACTIVE  */
+  .navbar.active {
+    @apply bg-bluePrimary transition-all duration-300 delay-150 ease-in;
+  }
+  /*   nabvar ul */
+  .navbar-ul {
     @apply flex justify-center items-center space-x-20 text-2xl text-white font-medium;
+  }
+  /* NAVBAR LI */
+  .navbar-li {
+    @apply cursor-pointer border-b-4 border-b-transparent hover:text-amber-300 hover:border-b-white;
   }
   /* glow dropshadow hero heading */
   .glow {
@@ -78,6 +90,11 @@
   opacity: 0.75;
   color: #e31c79 !important;
 }
-.slick-slide div {
-  /* margin: 10px; */
+.slick-slide > div {
+  margin: 10px;
+}
+
+.activeNav {
+  border-bottom: 4px solid white;
+  transition: all;
 }

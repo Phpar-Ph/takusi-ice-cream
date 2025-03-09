@@ -1,16 +1,10 @@
 import React from "react";
+// import React, { useRef, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Mango from "../assets/flavor/mango.jpg";
-import Choco from "../assets/flavor/choco.jpg";
-import Coconut from "../assets/flavor/coconut.jpg";
-import Ube from "../assets/flavor/ube.jpg";
-import Strawberry from "../assets/flavor/strawberry.jpg";
-import Pandan from "../assets/flavor/pandan.jpg";
 import Slider from "react-slick";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import { BiColumns } from "react-icons/bi";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -109,131 +103,86 @@ function CarouselFlavor() {
     ],
   };
 
+  //SLIDER
+  // const slider = useRef(null);
+  // function scroll(e) {
+  //   if (slider.current === null) return 0;
+  //   e.wheelDelta > 0 ? slider.current.slickNext() : slider.current.slickPrev();
+  // }
+  // useEffect(() => {
+  //   window.addEventListener("wheel", scroll, true);
+
+  //   return () => {
+  //     window.removeEventListener("wheel", scroll, true);
+  //   };
+  // }, []);
+  // ref={slider}
   return (
-    <div c>
-      <Slider {...settings} className="p-4 m-2 ">
-        {/* SLIDE 1 */}
-        <div className="p-2">
-          <div className=" w-full h-full flex-center ">
-            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
-              <div
-                style={{ backgroundImage: `url(${Mango})` }}
-                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
-              ></div>
+    <div className=" m-auto">
+      <div className="mt-20 mb-20">
+        <Slider {...settings} className="pl-4 pr-4 ml-2 mr-2 ">
+          {data.map((d) => (
+            <div className="bg-blue card-h text-black  border-2 drop-shadow-lg rounded-lg">
+              <div className="flex items-center justify-center w-full h-3/4">
+                <img
+                  src={d.image}
+                  alt=""
+                  className="h-full w-full object-cover rounded-t-lg"
+                />
+              </div>
 
-              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="headingFlavor">MANGO</h1>
-                <h1 className=" subheadingFlavor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur at totam exercitationem, mollitia dolorum quas
-                </h1>
+              <div className="text-left p-2 headingFlavor">
+                <h1>{d.flavor}</h1>
+              </div>
+
+              <div className="text-center subheadingFlavor mb-2 ml-2 mr-2 mt-0">
+                <p>{d.description}</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* SLIDE 2 */}
-        <div className="p-2">
-          <div className=" w-full h-full flex-center ">
-            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
-              <div
-                style={{ backgroundImage: `url(${Mango})` }}
-                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
-              ></div>
-
-              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="headingFlavor">MANGO</h1>
-                <h1 className=" subheadingFlavor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur at totam exercitationem, mollitia dolorum quas
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* SLIDE 3 */}
-        <div className="p-2">
-          <div className=" w-full h-full flex-center ">
-            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
-              <div
-                style={{ backgroundImage: `url(${Mango})` }}
-                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
-              ></div>
-
-              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="headingFlavor">MANGO</h1>
-                <h1 className=" subheadingFlavor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur at totam exercitationem, mollitia dolorum quas
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* SLIDE 4 */}
-        <div className="p-2">
-          <div className=" w-full h-full flex-center ">
-            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
-              <div
-                style={{ backgroundImage: `url(${Mango})` }}
-                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
-              ></div>
-
-              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="headingFlavor">MANGO</h1>
-                <h1 className=" subheadingFlavor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur at totam exercitationem, mollitia dolorum quas
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* slide 5 */}
-        <div className="p-2">
-          <div className=" w-full h-full flex-center ">
-            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
-              <div
-                style={{ backgroundImage: `url(${Mango})` }}
-                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
-              ></div>
-
-              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="headingFlavor">MANGO</h1>
-                <h1 className=" subheadingFlavor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur at totam exercitationem, mollitia dolorum quas
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* SLIDE 6 */}
-        <div className="p-2">
-          <div className=" w-full h-full flex-center ">
-            <div className=" card-h rounded-md flex flex-col  bg-blue drop-shadow-md">
-              <div
-                style={{ backgroundImage: `url(${Mango})` }}
-                className="w-full h-[80%] bg-cover bg-center rounded-t-md"
-              ></div>
-
-              <div className="w-full text-left   text-brown pr-4 pl-4 pt-2 pb-4">
-                <h1 className="headingFlavor">MANGO</h1>
-                <h1 className=" subheadingFlavor">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur at totam exercitationem, mollitia dolorum quas
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* SLIDE 7 */}
-        {/* SLIDE 8 */}
-        {/* SLIDE 9 */}
-        {/* SLIDE 10 */}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }
+
+const data = [
+  {
+    flavor: "Mango",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
+    image: "src/assets/flavor/mango.jpg",
+  },
+  {
+    flavor: "Chocolate",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
+    image: "src/assets/flavor/choco.jpg",
+  },
+  {
+    flavor: "Strawberry",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
+    image: "src/assets/flavor/strawberry.jpg",
+  },
+  {
+    flavor: "Buko Pandan",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
+    image: "src/assets/flavor/pandan.jpg",
+  },
+  {
+    flavor: "Cookies and Cream",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
+    image: "src/assets/flavor/cookies and cream.jpg",
+  },
+  {
+    flavor: "Ube",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
+    image: "src/assets/flavor/ube.jpg",
+  },
+];
 
 export default CarouselFlavor;

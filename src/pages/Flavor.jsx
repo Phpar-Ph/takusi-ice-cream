@@ -4,13 +4,11 @@ import Carousel from "../components/CarouselFlavor";
 
 function Flavor() {
   return (
-    <div>
-      <section className=" w-full " id="flavor">
-        <div className="container max-w-[1536px] pt-20 pb-20">
-          {/* IAMGE GRID GALLERRY */}
-          <Carousel />
-        </div>
-      </section>
+    <div id="flavor">
+      <div className="container max-w-[1536px] pt-20 pb-20">
+        {/* IAMGE GRID GALLERRY */}
+        <Carousel />
+      </div>
     </div>
   );
 }
