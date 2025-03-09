@@ -153,37 +153,37 @@ const data = [
     flavor: "Mango",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/mango.jpg",
+    image: "../assets/flavor/mango.jpg",
   },
   {
     flavor: "Chocolate",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/choco.jpg",
+    image: "../assets/flavor/choco.jpg",
   },
   {
     flavor: "Strawberry",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/strawberry.jpg",
+    image: "../assets/flavor/strawberry.jpg",
   },
   {
     flavor: "Buko Pandan",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/pandan.jpg",
+    image: "../assets/flavor/pandan.jpg",
   },
   {
     flavor: "Cookies and Cream",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/cookies and cream.jpg",
+    image: "../assets/flavor/cookies and cream.jpg",
   },
   {
     flavor: "Ube",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/ube.jpg",
+    image: "../assets/flavor/ube.jpg",
   },
 ];
 
