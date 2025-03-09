@@ -48,7 +48,6 @@ function SamplePrevArrow(props) {
 
 function CarouselFlavor() {
   const settings = {
-    dots: false,
     // className: "center",
     // centerMode: true,
     // centerPadding: "60px",
@@ -121,8 +120,11 @@ function CarouselFlavor() {
     <div className=" m-auto">
       <div className="mt-20 mb-20">
         <Slider {...settings} className="pl-4 pr-4 ml-2 mr-2 ">
-          {data.map((d) => (
-            <div className="bg-blue card-h text-black  border-2 drop-shadow-lg rounded-lg">
+          {data.map((d, i) => (
+            <div
+              className="bg-blue card-h text-black  border-2 drop-shadow-lg rounded-lg"
+              key={i}
+            >
               <div className="flex items-center justify-center w-full h-3/4">
                 <img
                   src={d.image}
