@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import mango from "../assets/flavor/mango.jpg";
+import choco from "../assets/flavor/choco.jpg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -153,37 +155,37 @@ const data = [
     flavor: "Mango",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "../assets/flavor/mango.jpg",
+    image: mango,
   },
   {
     flavor: "Chocolate",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "../assets/flavor/choco.jpg",
+    image: choco,
   },
   {
     flavor: "Strawberry",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "../assets/flavor/strawberry.jpg",
+    image: "src/assets/flavor/strawberry.jpg",
   },
   {
     flavor: "Buko Pandan",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "../assets/flavor/pandan.jpg",
+    image: "src/assets/flavor/pandan.jpg",
   },
   {
     flavor: "Cookies and Cream",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "../assets/flavor/cookies and cream.jpg",
+    image: "src/assets/flavor/cookies and cream.jpg",
   },
   {
     flavor: "Ube",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "../assets/flavor/ube.jpg",
+    image: "src/assets/flavor/ube.jpg",
   },
 ];
 
