@@ -5,7 +5,7 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="h-30 w-full bg-brown p-4 text-white font-comic text-center flex-center">
+    <div className="h-30 w-full bg-brown p-4 text-primary bg-bluePrimary font-comic text-center flex-center">
       <div>
         <p className="text-sm">Follow us</p>
         <div className="flex-center gap-4 text-2xl m-2">

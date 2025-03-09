@@ -15,7 +15,6 @@ function App() {
       <Flavor />
       <About />
       {/*    <Price />  */}
-
       <Contact />
       <Footer />
     </div>

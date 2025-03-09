@@ -10,12 +10,10 @@
   --font-montserrat: "Montserrat", "sans-serif";
   --font-archivo: "Archivo Black", "sans-serif";
 
-  --color-yellow: #f9db79;
-  --color-pink: #e31c79;
-  --color-brown: #32312f;
-  --color-white: #ffffff;
-  --color-blue: #d6f2fd;
   --color-bluePrimary: #0b3661;
+  --color-primary: #f3d9ca;
+  --color-secondary: #f0e7da;
+  --color-primaryHover: #fcf6f3;
 }
 
 .slick-arrow.slick-next:before {
@@ -59,7 +57,7 @@
   }
   /* form button */
   .btn {
-    @apply bg-blue-500 text-white text-sm lg:text-lg px-8 py-1 rounded-sm hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500 w-48;
+    @apply bg-bluePrimary text-primary text-sm lg:text-lg px-8 py-1 rounded-sm hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500 w-48;
   }
   /* NAVBAR */
   .navbar {
@@ -71,11 +69,11 @@
   }
   /*   nabvar ul */
   .navbar-ul {
-    @apply flex justify-center items-center space-x-20 text-2xl text-white font-medium;
+    @apply flex justify-center items-center space-x-20 text-2xl font-bold text-primary;
   }
   /* NAVBAR LI */
   .navbar-li {
-    @apply cursor-pointer border-b-4 border-b-transparent hover:text-amber-300 hover:border-b-white;
+    @apply cursor-pointer border-b-4  border-b-transparent hover:text-primaryHover drop-shadow-md;
   }
   /* glow dropshadow hero heading */
   .glow {
@@ -95,6 +93,6 @@
 }
 
 .activeNav {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid #f0e7da;
   transition: all;
 }

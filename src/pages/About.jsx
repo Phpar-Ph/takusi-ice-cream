@@ -12,10 +12,10 @@ function About() {
               <CarouselAbout />
             </div>
             <div className="md:w-[40%] border-2 z-1 md:mt-4 md:ml-0 md:mb-4 md:mr-0  md:p-6 ">
-              <h2 className="text-2xl  lg:text-4xl font-bold mb-4 text-center font-montserrat">
+              <h2 className="text-2xl  lg:text-4xl font-bold mb-4 text-center font-montserrat text-bluePrimary">
                 Our Story
               </h2>
-              <p className="text-lg md:text-sm lg:text-3xl  text-center leading-normal font-montserrat font-medium">
+              <p className="text-lg md:text-sm lg:text-3xl  text-center leading-normal font-montserrat font-medium text-bluePrimary">
                 Since the 1990s, we have been dedicated to crafting high-quality
                 ice cream that brings joy to every occasion. Whether you're
                 hosting a grand celebration, sharing sweet moments with loved

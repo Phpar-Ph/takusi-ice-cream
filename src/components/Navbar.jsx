@@ -26,26 +26,26 @@ function Navbar() {
     <div className={navbar ? "navbar active" : "navbar"}>
       <section className="container pt-4 pb-4  flex  items-center  md:justify-center justify-between font-comic font-medium">
         {/* NAV MENU  */}
-        <div className=" hidden md:block ">
-          <ul className="navbar-ul ">
+        <div className=" hidden md:block">
+          <ul className="navbar-ul">
             <li className="navbar-li ">
               <Link
                 to="home"
                 smooth={true}
                 spy={true}
-                offset={-50}
+                offset={-25}
                 duration={300}
                 activeClass="activeNav"
               >
                 Home
               </Link>
             </li>
-            <li className="navbar-ul">
+            <li className="navbar-li">
               <Link
                 to="flavor"
                 smooth={true}
                 spy={true}
-                offset={-50}
+                offset={-10}
                 duration={300}
                 activeClass="activeNav"
               >
@@ -64,24 +64,24 @@ function Navbar() {
                 </Link>
               </div>
             </li>
-            <li className="navbar-ul">
+            <li className="navbar-li">
               <Link
                 to="about"
                 smooth={true}
                 spy={true}
-                offset={-50}
+                offset={-25}
                 duration={300}
                 activeClass="activeNav"
               >
                 About
               </Link>
             </li>
-            <li className="navbar-ul">
+            <li className="navbar-li">
               <Link
                 to="contact"
                 smooth={true}
                 spy={true}
-                offset={-50}
+                offset={-25}
                 duration={300}
                 activeClass="activeNav"
               >

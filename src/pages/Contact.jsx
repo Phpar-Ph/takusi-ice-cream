@@ -23,16 +23,16 @@ function Contact() {
   };
 
   return (
-    <div className="w-full h-full bg-white pt-20 pb-20" id="contact">
+    <div className="w-full h-full bg-primary pt-20 pb-20" id="contact">
       <div className="h-full container  ">
         <div
-          className=" mt-10 flex border-2 flex-col-reverse sm:flex-row sm:gap-2
+          className=" mt-10 flex  flex-col-reverse sm:flex-row sm:gap-2
         "
         >
-          <div className=" sm:m-0 p-4 lg:p-6  sm:w-1/2 drop-shadow-lg">
+          <div className=" sm:m-0 p-8 lg:p-6  sm:w-1/2 drop-shadow-lg border-2 rounded-xl bg-secondary">
             <form onSubmit={handleSubmit}>
               {/* NAME */}
-              <div className="contact-container">
+              <div className="contact-container ">
                 <label className="contactLabel-font" htmlFor="name">
                   Name
                 </label>
@@ -98,10 +98,10 @@ function Contact() {
             </form>
           </div>
           <div className="sm:w-1/2 p-4">
-            <h2 className="text-5xl font-bold mb-1 text-right font-archivo">
+            <h2 className="text-5xl font-bold mb-1 text-right font-archivo text-bluePrimary">
               Get in touch!
             </h2>
-            <p className="text-xl  mb-4 text-right font-extralight">
+            <p className="text-xl  mb-4 text-right font-extralight text-bluePrimary">
               We’d love to hear from you! Whether you have a question about our
               flavors, want to give us feedback, or just want to say hello, our
               team is ready to listen.

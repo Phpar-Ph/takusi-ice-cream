@@ -7,6 +7,10 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import mango from "../assets/flavor/mango.jpg";
 import choco from "../assets/flavor/choco.jpg";
+import pandan from "../assets/flavor/pandan.jpg";
+import ube from "../assets/flavor/ube.jpg";
+import strawberry from "../assets/flavor/strawberry.jpg";
+import cookiesandcream from "../assets/flavor/cookiesAndCream.jpg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -124,7 +128,7 @@ function CarouselFlavor() {
         <Slider {...settings} className="pl-4 pr-4 ml-2 mr-2 ">
           {data.map((d, i) => (
             <div
-              className="bg-blue card-h text-black  border-2 drop-shadow-lg rounded-lg"
+              className="bg-blue card-h text-bluePrimary  border-8 border-secondary drop-shadow-lg rounded-lg bg-primary"
               key={i}
             >
               <div className="flex items-center justify-center w-full h-3/4">
@@ -167,25 +171,25 @@ const data = [
     flavor: "Strawberry",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/strawberry.jpg",
+    image: strawberry,
   },
   {
     flavor: "Buko Pandan",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/pandan.jpg",
+    image: pandan,
   },
   {
     flavor: "Cookies and Cream",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/cookies and cream.jpg",
+    image: cookiesandcream,
   },
   {
     flavor: "Ube",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: "src/assets/flavor/ube.jpg",
+    image: ube,
   },
 ];
 
