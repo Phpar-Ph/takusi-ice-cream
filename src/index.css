@@ -35,7 +35,7 @@
   }
   /* CAROUSEL CARD HEIGHT AND WIDTH*/
   .card-h {
-    @apply h-[18rem] w-[15rem] md:h-[28rem] md:w-[24rem] lg:h-[34rem] lg:w-[30rem];
+    @apply h-[25rem] w-[15rem] md:h-[28rem] md:w-[24rem] lg:h-[34rem] lg:w-[30rem];
   }
   /* Flavor carousel heading */
   .headingFlavor {
@@ -61,16 +61,17 @@
   }
   /* NAVBAR */
   .navbar {
-    @apply w-full  h-auto  top-0 fixed z-10 bg-transparent transition-all duration-300 delay-150 ease-out;
+    @apply w-full text-bluePrimary  h-auto  top-0 fixed z-10 bg-transparent transition-all duration-300 delay-150 ease-out;
   }
   /* NAVBAR ACTIVE  */
   .navbar.active {
-    @apply bg-bluePrimary transition-all duration-300 delay-150 ease-in;
+    @apply bg-bluePrimary transition-all duration-300 delay-150 ease-in text-primary;
   }
   /*   nabvar ul */
   .navbar-ul {
-    @apply flex justify-center items-center space-x-20 text-2xl font-bold text-primary;
+    @apply flex justify-center items-center space-x-20 text-2xl font-bold;
   }
+
   /* NAVBAR LI */
   .navbar-li {
     @apply cursor-pointer border-b-4  border-b-transparent hover:text-primaryHover drop-shadow-md;
@@ -95,4 +96,5 @@
 .activeNav {
   border-bottom: 4px solid #f0e7da;
   transition: all;
+  color: #f3d9ca;
 }

@@ -33,7 +33,7 @@ function Navbar() {
                 to="home"
                 smooth={true}
                 spy={true}
-                offset={-25}
+                offset={-30}
                 duration={300}
                 activeClass="activeNav"
               >
@@ -45,7 +45,7 @@ function Navbar() {
                 to="flavor"
                 smooth={true}
                 spy={true}
-                offset={-10}
+                offset={-30}
                 duration={300}
                 activeClass="activeNav"
               >
@@ -69,7 +69,7 @@ function Navbar() {
                 to="about"
                 smooth={true}
                 spy={true}
-                offset={-25}
+                offset={-30}
                 duration={300}
                 activeClass="activeNav"
               >
@@ -81,7 +81,7 @@ function Navbar() {
                 to="contact"
                 smooth={true}
                 spy={true}
-                offset={-25}
+                // offset={-25}
                 duration={300}
                 activeClass="activeNav"
               >
@@ -106,7 +106,7 @@ function Navbar() {
             <img
               src={Logo}
               alt="Takusi Ice Cream Logo"
-              className="w-[5rem] h-auto"
+              className="w-[4rem] h-auto"
             />
           </Link>
         </div>

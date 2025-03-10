@@ -29,7 +29,7 @@ function Contact() {
           className=" mt-10 flex  flex-col-reverse sm:flex-row sm:gap-2
         "
         >
-          <div className=" sm:m-0 p-8 lg:p-6  sm:w-1/2 drop-shadow-lg border-2 rounded-xl bg-secondary">
+          <div className=" sm:m-0 p-8 lg:p-6  sm:w-1/2 drop-shadow-lg border-transparent rounded-xl bg-secondary">
             <form onSubmit={handleSubmit}>
               {/* NAME */}
               <div className="contact-container ">

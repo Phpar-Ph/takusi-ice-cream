@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../assets/hero_slide/image1.jpg";
-import image2 from "../assets/hero_slide/image2.jpg";
+// import image1 from "../assets/hero_slide/image1.jpg";
+// import image2 from "../assets/hero_slide/image2.jpg";
+import image1 from "../assets/hero_slide/hero3.jpg";
 
 // Add more image imports here
 
-const images = [image1, image2];
+const images = [image1];
 
 function HeroSlide() {
   const [currentIndex, setCurrentIndex] = useState(0);

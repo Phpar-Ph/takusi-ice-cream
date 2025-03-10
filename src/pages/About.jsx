@@ -3,15 +3,14 @@ import CarouselAbout from "../components/CarouselAbout";
 
 function About() {
   return (
-    <div className="h-full w-full bg-blue relative pt-20 pb-20" id="about">
-      <div className="container  flex justify-center ">
-        <div className=" md:relative ">
-          <div className=" rounded-2xl  border-2 md:border-none md:pt-6  mt-4 mb-4 relative md:static pb-10 md:flex md:flex-row-reverse ">
-            <div className="h-64 lg:h-[45rem] xs:h-72 sm:h-80 w-full md:w-[60%] m-2 md:mt-4 relative">
-              <div className="bg-black/50 absolute top-0 left-0 right-0 bottom-0 z-1"></div>
+    <div className="h-full w-full relative pt-40 pb-40" id="about">
+      <div className="container ">
+        <div className=" md:relative border-2">
+          <div className=" rounded-2xl  border-2 md:border-none md:pt-6  mt-4 p-4 mb-4  md:static pb-10 md:flex md:flex-row-reverse">
+            <div className="h-64 lg:h-screen  xs:h-77 sm:h-80 md:w-[60%]  md:mt-4 ">
               <CarouselAbout />
             </div>
-            <div className="md:w-[40%] border-2 z-1 md:mt-4 md:ml-0 md:mb-4 md:mr-0  md:p-6 ">
+            <div className="md:w-[40%] lg:borde-2  z-1 md:mt-4 md:ml-0 md:mb-4 md:mr-0  md:p-6 ">
               <h2 className="text-2xl  lg:text-4xl font-bold mb-4 text-center font-montserrat text-bluePrimary">
                 Our Story
               </h2>
