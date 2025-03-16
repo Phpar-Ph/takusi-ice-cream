@@ -9,9 +9,15 @@ function Footer() {
       <div>
         <p className="text-sm">Follow us</p>
         <div className="flex-center gap-4 text-2xl m-2">
-          <FaFacebook />
-          <FaInstagramSquare />
-          <FaTwitterSquare />
+          <a href="https://www.facebook.com/takusiicecream" target="_blank">
+            <FaFacebook className="cursor-pointer" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <FaInstagramSquare className="cursor-pointer" />
+          </a>
+          <a href="https://x.com/?lang=en" target="_blank">
+            <FaTwitterSquare className="cursor-pointer" />
+          </a>
         </div>
         <p className="text-md">@2025 || All Rights Reserve</p>
       </div>

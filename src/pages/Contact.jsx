@@ -1,27 +1,50 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   phone: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission logic here
+  //   console.log("Form submitted:", formData);
+  // };
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-  };
 
+    emailjs
+      .sendForm("service_thgqujs", "template_mpjdzgx", form.current, {
+        publicKey: "P0KoKju3syXlN_UAX",
+      })
+      .then(
+        () => {
+          Swal.fire({
+            title: "Success!",
+            text: "Message sent successfully!",
+            icon: "success",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="w-full h-full bg-primary pt-20 pb-20" id="contact">
       <div className="h-full container  ">
@@ -30,68 +53,49 @@ function Contact() {
         "
         >
           <div className=" sm:m-0 p-8 lg:p-6  sm:w-1/2 drop-shadow-lg border-transparent rounded-xl bg-secondary">
-            <form onSubmit={handleSubmit}>
+            {/* EMAIL FORM */}
+            <form ref={form} onSubmit={sendEmail}>
               {/* NAME */}
               <div className="contact-container ">
-                <label className="contactLabel-font" htmlFor="name">
-                  Name
-                </label>
+                <label className="contactLabel-font">Name</label>
                 <input
                   type="text"
-                  id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   className="contactInput"
                   required
                 />
               </div>
               {/* EMAIL */}
               <div className="contact-container">
-                <label className=" contactLabel-font" htmlFor="email">
-                  Email
-                </label>
+                <label className=" contactLabel-font">Email</label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   className="contactInput"
                   required
                 />
               </div>
               {/* PHONE */}
               <div className="contact-container">
-                <label className="contactLabel-font" htmlFor="phone">
-                  Phone
-                </label>
+                <label className="contactLabel-font">Phone</label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
+                  name="number"
                   className="contactInput"
                   required
                 />
               </div>
               <div className="contact-container">
-                <label className="contactLabel-font" htmlFor="message">
-                  Message
-                </label>
+                <label className="contactLabel-font">Message</label>
                 <textarea
-                  id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   className="contactInput  resize-vertical max-h-25 lg:max-h-34  xl:max-h-60"
                   rows="8"
                   required
                 ></textarea>
               </div>
               <div className="flex-center">
-                <button type="submit" className="btn">
+                <button type="submit" className="btn" value="Send">
                   Send
                 </button>
               </div>

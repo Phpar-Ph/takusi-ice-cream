@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="h-full w-full relative pt-40 pb-40" id="about">
       <div className="container ">
-        <div className=" md:relative drop-shadow-md md:border-2">
+        <div className=" md:relative  md:border-2">
           <div className=" rounded-2xl  border-2 md:border-none md:pt-6  mt-4 p-4 mb-4  md:static pb-10 md:flex md:flex-row-reverse">
             <div className="h-64 lg:h-screen  xs:h-77 sm:h-80 md:w-[60%]  md:mt-4 ">
               <CarouselAbout />
