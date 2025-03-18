@@ -89,12 +89,12 @@ function Contact() {
                 <label className="contactLabel-font">Message</label>
                 <textarea
                   name="message"
-                  className="contactInput  resize-vertical max-h-25 lg:max-h-34  xl:max-h-60"
+                  className="contactInput  resize-vertical   lg:max-h-34  xl:max-h-60"
                   rows="8"
                   required
                 ></textarea>
               </div>
-              <div className="flex-center">
+              <div className="flex-center mt-4">
                 <button type="submit" className="btn" value="Send">
                   Send
                 </button>
@@ -102,7 +102,7 @@ function Contact() {
             </form>
           </div>
           <div className="sm:w-1/2 p-4">
-            <h2 className="text-5xl font-bold mb-1 text-right font-archivo text-bluePrimary">
+            <h2 className="sm:text-3xl text-2xl md:text-4xl lg:text-5xl font-bold mb-1 text-right font-archivo text-bluePrimary">
               Get in touch!
             </h2>
             <p className="text-xl  mb-4 text-right font-extralight text-bluePrimary">
@@ -116,7 +116,7 @@ function Contact() {
             <p className="text-sm mb-2">
               <strong>Address:</strong> 123 Ice Cream St, Cebu City, Philippines
             </p>
-            <div className=" h-50 sm:h-36 lg:h-72 xl:h-[28rem] border-2 ">
+            <div className=" h-50 sm:h-40 md:h-52 lg:h-72 xl:h-[28rem] border-2 ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.14949366360804!2d123.86980960375791!3d10.30292419297053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f001d9f9e7f%3A0xdb0d73e94ef55c5e!2sTakusi%20Ice%20Cream%20-%20Cebu!5e0!3m2!1sen!2sph!4v1740659761629!5m2!1sen!2sph"
                 width="100%"
