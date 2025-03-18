@@ -3,12 +3,12 @@
 
 @theme {
   --font-comic: "Comic Neue", "serif";
-  --font-pacifico: "Pacifico", "serif";
+  /* --font-pacifico: "Pacifico", "serif"; */
   --font-neuton: "Neuton", "serif";
   --font-inter: "Inter", "serif";
-  --font-coiny: "Coiny", "system-ui";
-  --font-montserrat: "Montserrat", "sans-serif";
-  --font-archivo: "Archivo Black", "sans-serif";
+  --font-coiny: "Coiny", "serif";
+  --font-montserrat: "Montserrat", "serif";
+  --font-archivo: "Archivo Black", "serif";
 
   --color-bluePrimary: #0b3661;
   --color-primary: #f3d9ca;

@@ -28,7 +28,7 @@ function Home() {
         }}
       >
         {/* overlay */}
-        <div className="bg-gradient-to-b from-slate-800/40 via-white/5 to-slate-800/40 absolute top-0 left-0 right-0 bottom-0"></div>
+        <div className="bg-gradient-to-b from-slate-800/40 via-white/5 to-slate-800/40 w-full h-screen"></div>
         <div className="flex justify-center items-center absolute flex-col cotainer mt-40">
           <h1 className="lg:text-7xl md:text-5xl text-3xl leading-normal glow   text-center  font-coiny text-bluePrimary">
             Savor the Joy, One Scoop at a Time.
