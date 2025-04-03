@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Tab() {
   const [activeTab, setActiveTab] = useState("Pickup");
@@ -62,7 +62,7 @@ function Tab() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">
-                  What's included
+                  Whats included
                 </h3>
                 <ul role="list" className="mt-4 space-y-3">
                   <li className="flex space-x-3">
@@ -199,7 +199,7 @@ function Tab() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">
-                  What's included
+                  Whats included
                 </h3>
                 <ul role="list" className="mt-4 space-y-3">
                   <li className="flex space-x-3">
@@ -336,7 +336,7 @@ function Tab() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">
-                  What's included
+                  Whats included
                 </h3>
                 <ul role="list" className="mt-4 space-y-3">
                   <li className="flex space-x-3">
@@ -473,7 +473,7 @@ function Tab() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">
-                  What's included
+                  Whats included
                 </h3>
                 <ul role="list" className="mt-4 space-y-3">
                   <li className="flex space-x-3">
@@ -585,7 +585,7 @@ function Tab() {
               </div>
             </div>
           )}
-          {/* DILIVER MEDIUM */}
+          {/* DELIVER MEDIUM */}
           {activeTab === "Deliver" && (
             <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
               <div className="p-6">
@@ -610,7 +610,7 @@ function Tab() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">
-                  What's included
+                  Whats included
                 </h3>
                 <ul role="list" className="mt-4 space-y-3">
                   <li className="flex space-x-3">
@@ -722,7 +722,7 @@ function Tab() {
               </div>
             </div>
           )}
-          {/* DILIVER LARGE */}
+          {/* DELIVER LARGE */}
           {activeTab === "Deliver" && (
             <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
               <div className="p-6">
@@ -747,7 +747,7 @@ function Tab() {
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">
-                  What's included
+                  Whats included
                 </h3>
                 <ul role="list" className="mt-4 space-y-3">
                   <li className="flex space-x-3">

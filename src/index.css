@@ -45,7 +45,7 @@
   .subheadingFlavor {
     @apply text-xs lg:text-lg leading-tight font-thin font-comic;
   }
-  /* CONTACT FORM STYLR*/
+  /* CONTACT FORM STYLE*/
   .contact-container {
     @apply mb-1 lg:mb-2 xl:mb-4;
   }

@@ -1,16 +1,16 @@
-import React from "react";
-// import React, { useRef, useEffect } from "react";
+//import React, { useRef, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { Flavor } from "../data/Flavor";
+import PropTypes from "prop-types";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
+    <div className={`${className}`} onClick={onClick}>
       <IoIosArrowForward
         style={{
           ...style,
@@ -27,10 +27,16 @@ function SampleNextArrow(props) {
   );
 }
 
+SampleNextArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+};
+
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
+    <div className={`${className}`} onClick={onClick}>
       <IoIosArrowBack
         style={{
           ...style,
@@ -46,6 +52,11 @@ function SamplePrevArrow(props) {
     </div>
   );
 }
+SamplePrevArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+};
 
 function CarouselFlavor() {
   const settings = {

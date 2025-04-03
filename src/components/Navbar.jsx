@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import Logo from "../assets/LOGO.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -22,7 +22,6 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    // Nabar
     <div className={navbar ? "navbar active" : "navbar"}>
       <section className="container pt-4 pb-4  flex  items-center  md:justify-center justify-between font-comic font-medium">
         {/* NAV MENU  */}
