@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
 // import HeroSlide, { getCurrentImage } from "../components/HeroSlide";
-import image from "../assets/hero_slide/hero3.jpg";
 
 function Home() {
   // const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +20,7 @@ function Home() {
       <section
         className="flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url("https://7uomswwzdn.ufs.sh/f/jqqibgGpBsTYwAXd8K8IGgNKY2n7fMjm6oaBcDJqQ5bV1pUX") `,
           height: "100vh",
           width: "100%",
         }}

@@ -5,12 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import mango from "../assets/flavor/mango.jpg";
-import choco from "../assets/flavor/choco.jpg";
-import pandan from "../assets/flavor/pandan.jpg";
-import ube from "../assets/flavor/ube.jpg";
-import strawberry from "../assets/flavor/strawberry.jpg";
-import cookiesandcream from "../assets/flavor/cookiesAndCream.jpg";
+import { Flavor } from "../data/Flavor";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -126,14 +121,14 @@ function CarouselFlavor() {
     <div className=" m-auto">
       <div className="mt-20 mb-20">
         <Slider {...settings} className="pl-4 pr-4 ml-2 mr-2 ">
-          {data.map((d, i) => (
+          {Flavor.map((d, i) => (
             <div
               className="bg-blue card-h text-bluePrimary  border-8 border-secondary drop-shadow-lg rounded-lg bg-primary"
               key={i}
             >
               <div className="flex items-center justify-center w-full h-3/4">
                 <img
-                  src={d.image}
+                  src={d.link}
                   alt=""
                   className="h-full w-full object-cover rounded-t-lg"
                 />
@@ -153,44 +148,5 @@ function CarouselFlavor() {
     </div>
   );
 }
-
-const data = [
-  {
-    flavor: "Mango",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: mango,
-  },
-  {
-    flavor: "Chocolate",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: choco,
-  },
-  {
-    flavor: "Strawberry",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: strawberry,
-  },
-  {
-    flavor: "Buko Pandan",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: pandan,
-  },
-  {
-    flavor: "Cookies and Cream",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: cookiesandcream,
-  },
-  {
-    flavor: "Ube",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Pariatur at totam exercitationem, mollitia dolorum quas",
-    image: ube,
-  },
-];
 
 export default CarouselFlavor;

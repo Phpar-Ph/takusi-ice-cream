@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from "react";
-import image1 from "../assets/about_slide/image1.jpg";
-import image2 from "../assets/about_slide/image2.jpg";
-import image3 from "../assets/about_slide/image3.jpg";
-import image4 from "../assets/about_slide/image4.jpg";
-import image5 from "../assets/about_slide/image5.jpg";
+import { useState, useEffect } from "react";
+import { aboutImages } from "../data/About-pic";
 // Add more image imports here
-
-const images = [image1, image2, image3, image4, image5];
 
 function CarouselAbout() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,10 +15,10 @@ function CarouselAbout() {
 
   return (
     <div className="relative w-full h-full">
-      {images.map((image, index) => (
+      {aboutImages.map((image, index) => (
         <img
           key={index}
-          src={image}
+          src={image.link}
           alt={`Slide ${index}`}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
             index === currentIndex ? "opacity-100" : "opacity-0"
