@@ -67,7 +67,7 @@
   .navbar.active {
     @apply bg-bluePrimary transition-all duration-300 delay-150 ease-in text-primary;
   }
-  /*   nabvar ul */
+  /*   navbar ul */
   .navbar-ul {
     @apply flex justify-center items-center space-x-20 text-2xl font-bold;
   }
@@ -76,7 +76,7 @@
   .navbar-li {
     @apply cursor-pointer border-b-4  border-b-transparent hover:text-primaryHover drop-shadow-md;
   }
-  /* glow dropshadow hero heading */
+  /* glow darkshadow hero heading */
   .glow {
     @apply drop-shadow-[0px_0px_28px_rgba(255,255,255,0.8)];
   }
