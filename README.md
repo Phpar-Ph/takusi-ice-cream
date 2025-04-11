@@ -30,4 +30,4 @@ The project is not yet 100% complete, as I am continuously improving my coding s
 - Improve the overall design of the website
 - Add a strong call-to-action on the homepage
 
-Website link : [Website link](https://takusi-icecream.netlify.app/)
+## Website link : [Takusi Ice Cream](https://takusi-icecream.netlify.app/)
